@@ -1,0 +1,30 @@
+@import "../styles/all.scss";
+
+.Login {
+  form {
+    @include flexColumn(10px);
+    height: 100vh;
+    background: $secondary;
+    margin: 20%;
+    border-radius: 10px;
+  }
+
+  h1 {
+    color: $primary;
+  }
+
+  input {
+    height: 20px;
+    border: solid rgb(79, 79, 79) 1px;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .submit {
+    @extend %button;
+    color: $primary;
+    background: $tertiary;
+    border: none;
+    border-radius: 10px;
+  }
+}

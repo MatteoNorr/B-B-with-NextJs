@@ -23,6 +23,11 @@ const DefaultLayout = ({ children }) => {
       name: "Locations",
       value: "/locations",
     },
+    {
+      id: 5,
+      name: "Login",
+      value: "/login",
+    },
   ];
 
   return (
