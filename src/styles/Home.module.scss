@@ -1,0 +1,30 @@
+@import "./all.scss";
+
+.Hero {
+  max-width: 100%;
+  @include flexRow(15px);
+  background-color: $secondary;
+  padding: $defaultSpacing;
+
+  @include sizeScreen(0, 1240px) {
+    @include flexColumn(5px);
+  }
+
+  img,
+  p {
+    width: 50%;
+    color: $primary;
+    border-radius: 10px;
+  }
+}
+
+.body {
+  img {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  p {
+    text-align: center;
+  }
+}

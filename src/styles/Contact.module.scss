@@ -1,0 +1,31 @@
+@import "./all.scss";
+
+.Contact {
+  @include flexColumn(0);
+  margin: 10px;
+  min-height: 100vh;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.406);
+  background-color: $secondary;
+  border-radius: 20px;
+  color: $primary;
+
+  @include sizeScreen(0, 1240px) {
+    max-height: 500px;
+  }
+
+  a {
+    text-decoration-line: none;
+  }
+
+  button {
+    @include flexRow(0);
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: $secondary;
+    border: none;
+    background-color: $primary;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}

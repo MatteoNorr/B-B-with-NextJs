@@ -1,0 +1,57 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+%reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+%head1 {
+  font-size: $titleSize;
+  font-weight: 800;
+  color: $primary;
+  margin: 0;
+  text-align: center;
+}
+
+%head1-5 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: $secondary;
+  margin: 10px;
+  text-align: center;
+}
+
+%head2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: $primary;
+  margin: 20px 0;
+  text-align: center;
+}
+
+%head3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: $primary;
+  margin: 0;
+  text-align: center;
+}
+
+%button {
+  @include flex(row, center, center, 10px);
+  background-color: $secondary;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+}
+
+%select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}

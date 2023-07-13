@@ -1,0 +1,55 @@
+$margin: 5%;
+$defaultSpacing: 2%;
+$mediumSpacing: 7%;
+$target: solid red 2px;
+
+/*colors*/
+$primary: #ededed;
+$primary-rgb: 237, 237, 237;
+$primary-contrast: #000000;
+$primary-contrast-rgb: 0, 0, 0;
+$primary-shade: #d1d1d1;
+$primary-tint: #efefef;
+
+$secondary: #008f7a;
+$secondary-rgb: 0, 143, 122;
+$secondary-contrast: #ffffff;
+$secondary-contrast-rgb: 255, 255, 255;
+$secondary-shade: #007e6b;
+$secondary-tint: #1a9a87;
+
+$tertiary: #4b4453;
+$tertiary-rgb: 75, 68, 83;
+$tertiary-contrast: #ffffff;
+$tertiary-contrast-rgb: 255, 255, 255;
+$tertiary-shade: #423c49;
+$tertiary-tint: #5d5764;
+
+$success: #2dd36f;
+$success-rgb: 45, 211, 111;
+$success-contrast: #000000;
+$success-contrast-rgb: 0, 0, 0;
+$success-shade: #28ba62;
+$success-tint: #42d77d;
+
+$warning: #ffc409;
+$warning-rgb: 255, 196, 9;
+$warning-contrast: #000000;
+$warning-contrast-rgb: 0, 0, 0;
+$warning-shade: #e0ac08;
+$warning-tint: #ffca22;
+
+$danger: #eb445a;
+$danger-rgb: 235, 68, 90;
+$danger-contrast: #ffffff;
+$danger-contrast-rgb: 255, 255, 255;
+$danger-shade: #cf3c4f;
+$danger-tint: #ed576b;
+
+/*text*/
+$defaultFont: "Monserrat", sans-serif;
+$titleFont: Arial, Helvetica, sans-serif;
+$titleSize: 8em;
+$tileh2Size: 3rem;
+$subTitleSize: 1.2em;
+$textSize: 1em;

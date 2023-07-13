@@ -1,0 +1,37 @@
+@import "./all.scss";
+
+.About {
+  @include flexColumn(0);
+  padding: $mediumSpacing;
+
+  @include sizeScreen(0, 1240px) {
+    padding: 20px 0;
+  }
+
+  h1 {
+    @extend %head1-5;
+    color: $secondary;
+  }
+
+  p {
+    padding: 0 30%;
+    text-align: justify;
+    color: $secondary;
+
+    @include sizeScreen(0, 1240px) {
+      padding: 20px;
+    }
+  }
+
+  button {
+    @include flexRow(0);
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: $secondary;
+    border: none;
+    background-color: $primary;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}

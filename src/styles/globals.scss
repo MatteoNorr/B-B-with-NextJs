@@ -1,0 +1,16 @@
+@import "./all.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  font-family: $defaultFont;
+}
+
+li {
+  list-style-type: none;
+}

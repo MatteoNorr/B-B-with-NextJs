@@ -1,0 +1,25 @@
+@import "../../styles/all.scss";
+
+.DefaultLayout {
+  .Navbar,
+  .Footer {
+    @include flexRow(10px);
+    background-color: $secondary;
+    height: 50px;
+    margin: 0;
+    color: $primary;
+
+    li {
+      color: $primary;
+    }
+
+    a {
+      text-decoration-line: none;
+      list-style-type: none;
+    }
+  }
+
+  .content {
+    min-height: 100vh;
+  }
+}

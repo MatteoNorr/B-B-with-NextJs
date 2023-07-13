@@ -1,0 +1,75 @@
+@import "./all.scss";
+
+.Locations,
+.SingleLocation {
+  @include flexColumn(0px);
+  padding: $defaultSpacing;
+
+  button {
+    @include flexRow(0);
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: $secondary;
+    border: none;
+    background-color: $primary;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  a {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    text-decoration-line: none;
+  }
+
+  h1 {
+    @extend %head1-5;
+  }
+
+  .Location {
+    @include flex(row, space-around, center, 10px);
+    min-width: 100%;
+    min-height: 518px;
+    text-align: center;
+    border-bottom: solid $tertiary 1px;
+  }
+
+  img {
+    border-radius: 20px;
+  }
+
+  .info {
+    max-width: 200px;
+  }
+
+  p {
+    margin: 5px;
+  }
+
+  .amenities {
+    background-color: $secondary-tint;
+    padding: 10px;
+    border-radius: 20px;
+    color: $primary;
+    cursor: pointer;
+  }
+}
+
+.SingleLocation {
+  .Location {
+    @include flex(column, flex-start, center, 0);
+    height: 100vh;
+    border: none;
+  }
+
+  .listAttraction {
+    @include flexColumn(0);
+    width: 100%;
+  }
+
+  .info {
+    max-width: 100%;
+  }
+}
