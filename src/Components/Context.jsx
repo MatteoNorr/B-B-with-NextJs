@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext} from "react";
 
 export const Context = createContext([
   {
@@ -28,9 +28,11 @@ export const Context = createContext([
   },
 ]);
 
-// const Theme = createContext();
-
-// export function ThemeFuction({ children }) {
-//   const [value, setValue] = useState();
-//   return <Theme.Provider value={value}>{children}</Theme.Provider>;
-// }
+export const reducer = (state, action) => {
+  switch(action.type){
+    case "increment":
+      return {firstNumb: (state.firstNumb + 1)}
+    case "decrement":
+      return state.firstNumb ? {firstNumb: (state.firstNumb - 1)} : {firstNumb: 1}
+  }
+}

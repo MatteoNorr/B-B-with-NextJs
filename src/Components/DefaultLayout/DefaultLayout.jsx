@@ -1,24 +1,14 @@
 import Link from "next/link";
 import styles from "./DefaultLayout.module.scss";
 import { useContext, useReducer } from "react";
-import { Context } from "../Context";
+import { Context, reducer } from "../Context";
 
 //Esercizio avanzato
-function reducerPlus(state, action) {
-  return { firstNumb: state.firstNumb + 1 };
-}
-function reducerMinus(state, action) {
-  return { numb: state.firstNumb - 1 };
-}
-
 const DefaultLayout = ({ children }) => {
-  const [stateInit, dispatchPlus] = useReducer(reducerPlus, { firstNumb: 0 });
-  const [state, dispatchMin] = useReducer(reducerMinus, {
-    numb: stateInit,
-  });
+  const [state, dispatch] = useReducer(reducer, { firstNumb: 1 });
 
-  const increment = () => dispatchPlus();
-  const decrement = () => dispatchMin();
+  const increment = () => dispatch({type: "increment"})
+  const decrement = () => dispatch({type: "decrement"})
 
   //Sostituisco il mock con uno useContext
   const links = useContext(Context);
@@ -33,8 +23,7 @@ const DefaultLayout = ({ children }) => {
         ))}
         <button onClick={increment}>+</button>
         <p>Number of guests</p>
-        <p>{stateInit.firstNumb}</p>
-
+        <p>{state.firstNumb}</p>
         <button onClick={decrement}>-</button>
       </ul>
       <div className={styles.content}>{children}</div>
